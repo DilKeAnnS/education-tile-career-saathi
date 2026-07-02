@@ -1,4 +1,6 @@
-import 'package:flutter/material.dart';
+import 'screens/home/home_screen.dart';
+import 'screens/courses/courses_screen.dart';
+import 'screens/profile/profile_screen.dart';import 'package:flutter/material.dart';
 import 'core/theme/app_theme.dart';
 
 void main() {
