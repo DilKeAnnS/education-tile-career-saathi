@@ -12,9 +12,16 @@ class CareerMapping {
 final List<CareerMapping> careerMappings = [
 
   CareerMapping(
-    streamId: "SCIENCE",
+    streamId: "MEDICAL_HEALTH",
     careerIds: [
       "MED_DOCTOR_001",
+    ],
+  ),
+
+  CareerMapping(
+    streamId: "ENGINEERING_TECH",
+    careerIds: [
+      "ENGINEER_SOFTWARE_001",
     ],
   ),
 
