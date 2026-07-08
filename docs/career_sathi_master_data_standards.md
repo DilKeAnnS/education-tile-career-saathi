@@ -1138,3 +1138,341 @@ Every major update should maintain:
 Release Principle
 
 Stable Foundation → Controlled Growth → Scalable Future
+
+## Section 21 – Global Navigation Path & Career Journey Tracker Standards
+
+21.1 Purpose
+
+Career Saathi app me user ko har samay ye pata hona chahiye ki wo app ke kis level par hai aur uska current learning/career journey path kya hai.
+
+Example:
+
+Education
+→ Streams
+→ Engineering
+→ Colleges
+→ Seats
+
+Is feature ka purpose user confusion ko remove karna aur career exploration ko guided journey banana hai.
+
+---
+
+21.2 Navigation Path Structure
+
+Har module ka ek hierarchical path maintain hoga.
+
+Example:
+
+Home
+ └── Education
+      └── Engineering
+           └── B.Tech
+                └── Colleges
+                     └── Admission
+
+---
+
+21.3 Breadcrumb Path Standards
+
+User interface ke top section me current path show hoga.
+
+Example:
+
+Education > Engineering > B.Tech > Colleges
+
+Rules:
+
+- Har level clickable hoga.
+- User kisi bhi previous level par directly return kar sakta hai.
+- Maximum readable path mobile screen ke hisab se optimize hoga.
+- Deep navigation me shortened display use ho sakta hai.
+
+---
+
+21.4 Career Journey Tracker
+
+Career Saathi user ke exploration path ko samjhega.
+
+Example:
+
+User journey:
+
+Class 12
+ ↓
+Science Stream
+ ↓
+Engineering
+ ↓
+JEE Exam
+ ↓
+College Selection
+ ↓
+Career Options
+
+System is journey ke basis par relevant suggestions provide karega.
+
+---
+
+21.5 AnnS AI Context Awareness
+
+AnnS AI ko user ka current navigation context available hoga.
+
+Example:
+
+Current Context:
+
+Education
+> Engineering
+> Government Colleges
+> Haryana
+> Seats
+
+User query:
+
+"Iske baad kya karna chahiye?"
+
+AI relevant next steps suggest karega.
+
+---
+
+21.6 Database Standard
+
+Har page/module ke saath navigation metadata store hoga.
+
+Example:
+
+{
+ "page_id": "engineering_college_seats",
+ "module": "education",
+ "path": [
+   "Education",
+   "Engineering",
+   "Colleges",
+   "Seats"
+ ],
+ "parent_id": "engineering_colleges"
+}
+
+---
+
+21.7 Supported Modules
+
+Global Navigation System in modules me apply hoga:
+
+1. Education
+2. Jobs & Exams
+3. Scholarships
+4. Business
+5. Abroad Studies
+6. Government Schemes
+7. Study Materials
+8. AI Tools
+9. Career Guidance
+
+---
+
+21.8 Future Expansion Rule
+
+Navigation system India level expansion ko support karega.
+
+Example:
+
+India
+ └── Haryana
+      └── Engineering
+           └── Colleges
+                └── Seats
+
+Future states easily add kiye ja sakenge.
+
+---
+
+21.9 Version Control
+
+Feature Version:
+
+Global Navigation Path System v1.0
+
+Future updates:
+
+v1.1 - User Progress Tracking
+v1.2 - AI Journey Prediction
+v2.0 - Personal Career Dashboard
+
+---
+
+Final Standard
+
+Career Saathi ka navigation system sirf page tracking nahi hoga, balki ek intelligent Career Journey Map hoga jo user, data system aur AnnS AI ko ek common context provide karega.
+
+## Section 22 – User Progress Tracking & Personal Career Dashboard Standards
+
+22.1 Purpose
+
+Career Saathi app ka objective sirf information dena nahi hai, balki user ki career journey ko track karke usko step-by-step guidance dena hai.
+
+User ko apni progress, completed activities aur next recommended steps ek personal dashboard me dikhaye jayenge.
+
+---
+
+22.2 User Progress Model
+
+Har user ki journey ko stages ke hisab se track kiya jayega.
+
+Example:
+
+Student Profile
+
+Class:
+12th
+
+Interest:
+Engineering
+
+Current Journey:
+
+✓ Stream Selection Completed
+✓ Engineering Courses Viewed
+✓ JEE Exam Information Viewed
+
+Next Steps:
+→ College Comparison
+→ Scholarship Check
+→ Career Roadmap
+
+---
+
+22.3 Personal Career Dashboard
+
+Dashboard me ye sections honge:
+
+1. My Journey
+
+User ki current career path:
+
+Science
+ ↓
+Engineering
+ ↓
+B.Tech
+ ↓
+Computer Science
+
+---
+
+2. Completed Activities
+
+Example:
+
+✓ Viewed JEE Eligibility
+✓ Saved IIT College List
+✓ Downloaded Study Material
+✓ Attempted Mock Test
+
+---
+
+3. Recommended Next Actions
+
+System user ko next steps suggest karega.
+
+Example:
+
+Aapne Engineering select kiya hai.
+
+Next:
+1. Entrance Exams dekhein
+2. College Fees compare karein
+3. Scholarship check karein
+
+---
+
+22.4 AnnS AI Personal Guidance
+
+AnnS AI user ke progress context ke according guidance dega.
+
+Example:
+
+User:
+"Mujhe ab kya karna chahiye?"
+
+AI Context:
+
+{
+"stage":"12th",
+"interest":"Engineering",
+"completed":"JEE Information",
+"pending":"College Selection"
+}
+
+AI answer:
+
+"Ab aapko college selection aur scholarship options explore karne chahiye."
+
+---
+
+22.5 User Data Privacy Rules
+
+Progress tracking optional hoga.
+
+Rules:
+
+- User ki permission ke bina personal tracking nahi hogi.
+- Anonymous mode me bhi basic navigation progress available ho sakti hai.
+- Sensitive personal information store nahi ki jayegi.
+- User kabhi bhi apna progress clear kar sakta hai.
+
+---
+
+22.6 Database Structure
+
+Example:
+
+{
+"user_id":"12345",
+"career_path":[
+"Science",
+"Engineering",
+"B.Tech"
+],
+"completed_modules":[
+"JEE",
+"Colleges"
+],
+"saved_items":[
+"IIT Delhi"
+],
+"last_activity":"College Search"
+}
+
+---
+
+22.7 Benefits
+
+1. User ko clear direction milegi.
+2. Career confusion kam hoga.
+3. AnnS AI better recommendations de payega.
+4. Student apni preparation monitor kar payega.
+5. Long-term career planning possible hogi.
+
+---
+
+22.8 Future Expansion
+
+Future versions me add kiya ja sakta hai:
+
+- Personal Career Timeline
+- Goal Setting
+- Study Planner
+- Exam Preparation Tracker
+- Skill Development Tracker
+- Achievement Badges
+
+---
+
+Final Standard
+
+Career Saathi ka User Progress System ek intelligent guidance layer hoga jo student ko sirf information consume karne ke bajay apni career journey complete karne me help karega.
+
+Version:
+User Progress Tracking System v1.0
+
