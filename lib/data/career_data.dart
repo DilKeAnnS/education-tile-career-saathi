@@ -1,127 +1,67 @@
-import '../models/career_model.dart';
+class CareerModel {
+  final String careerId;
 
-final List<CareerModel> careerData = [
+  final String title;
+  final String category;
+  final String careerType;
 
-  CareerModel(
-    careerId: "MED_DOCTOR_001",
-    title: "Doctor",
-    category: "Medical",
+  final String overview;
 
-    overview:
-        "A healthcare professional who diagnoses, treats and manages patient health.",
+  final List<String> suitableStages;
+  final List<String> relatedStreams;
 
-    suitableStages: [
-      "AFTER_12",
-      "UG",
-    ],
+  final List<String> roadmapIds;
+  final List<String> courseIds;
+  final List<String> examIds;
+  final List<String> collegeIds;
+  final List<String> scholarshipIds;
 
-    relatedStreams: [
-      "SCIENCE",
-      "MEDICAL_HEALTH",
-    ],
+  final List<String> skills;
+  final List<String> jobRoles;
+  final List<String> keywords;
 
-    roadmap: [
-      "Complete Class 12 with PCB",
-      "Prepare for NEET UG examination",
-      "Complete MBBS degree",
-      "Choose specialization",
-    ],
+  final String duration;
+  final String futureScope;
+  final String averageSalary;
 
-    courses: [
-      "MBBS",
-      "MD",
-      "MS",
-    ],
+  final String officialSource;
+  final String officialWebsite;
 
-    exams: [
-      "NEET UG",
-      "NEET PG",
-    ],
+  final String academicYear;
+  final String lastUpdated;
+  final String verificationStatus;
 
-    skills: [
-      "Biology",
-      "Communication",
-      "Patient Care",
-      "Problem Solving",
-    ],
+  CareerModel({
+    required this.careerId,
 
-    colleges: [
-      "AIIMS",
-      "Government Medical Colleges",
-    ],
+    required this.title,
+    required this.category,
+    required this.careerType,
 
-    scholarships: [
-      "National Scholarship Portal",
-      "State Medical Scholarships",
-    ],
+    required this.overview,
 
-    duration:
-        "5.5 years including internship",
+    required this.suitableStages,
+    required this.relatedStreams,
 
-    futureScope:
-        "Healthcare, research and medical technology opportunities",
-  ),
+    required this.roadmapIds,
+    required this.courseIds,
+    required this.examIds,
+    required this.collegeIds,
+    required this.scholarshipIds,
 
+    required this.skills,
+    required this.jobRoles,
+    required this.keywords,
 
-  CareerModel(
-    careerId: "ENGINEER_SOFTWARE_001",
-    title: "Software Engineer",
-    category: "Engineering & Technology",
+    required this.duration,
+    required this.futureScope,
+    required this.averageSalary,
 
-    overview:
-        "A technology professional who designs and develops software solutions.",
+    required this.officialSource,
+    required this.officialWebsite,
 
-    suitableStages: [
-      "AFTER_12",
-      "DIPLOMA",
-      "UG",
-    ],
-
-    relatedStreams: [
-      "SCIENCE",
-      "ENGINEERING_TECH",
-      "DIGITAL_AI",
-    ],
-
-    roadmap: [
-      "Learn mathematics and programming basics",
-      "Complete technical degree or diploma",
-      "Build software projects",
-      "Gain industry experience",
-    ],
-
-    courses: [
-      "B.Tech Computer Science",
-      "BCA",
-      "Computer Diploma",
-    ],
-
-    exams: [
-      "JEE Main",
-      "University Entrance Exams",
-    ],
-
-    skills: [
-      "Programming",
-      "Logical Thinking",
-      "Technology Skills",
-    ],
-
-    colleges: [
-      "IITs",
-      "NITs",
-      "Engineering Colleges",
-    ],
-
-    scholarships: [
-      "National Scholarship Portal",
-    ],
-
-    duration:
-        "3-4 years depending on course",
-
-    futureScope:
-        "AI, software development, cloud and technology sectors",
-  ),
-
-];
+    required this.academicYear,
+    required this.lastUpdated,
+    required this.verificationStatus,
+  });
+}
