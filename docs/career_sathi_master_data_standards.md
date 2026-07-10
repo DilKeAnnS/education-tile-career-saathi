@@ -2444,3 +2444,215 @@ Career Saathi का monetization model user trust और value creation पर 
 Version:
 
 Monetization & Partner Ecosystem Standards v1.0
+
+27. Official Source & Verification Standards
+
+27.1 Purpose
+
+Career Saathi is a guidance platform. Every important education and career related information should be supported by official and verifiable sources.
+
+The platform should always encourage users to verify important information from the respective official authority.
+
+---
+
+27.2 Official Source Policy
+
+Every important record should contain:
+
+- Official Authority
+- Official Website
+- Source Type
+- Verification Status
+- Last Verified Date
+- Last Updated Date
+- Academic Session (where applicable)
+
+---
+
+27.3 Supported Official Sources
+
+Preferred information sources include:
+
+- Central Government Departments
+- State Government Departments
+- Statutory Bodies
+- Universities
+- Examination Authorities
+- Regulatory Councils
+- Official Recruitment Boards
+- Official Educational Institutions
+
+---
+
+27.4 Verification Levels
+
+Verified
+
+Information verified from official source.
+
+Under Review
+
+Information is being verified.
+
+Archived
+
+Old academic year information retained only for reference.
+
+Expired
+
+Information is no longer valid.
+
+---
+
+27.5 Official Link Support
+
+Wherever possible, provide:
+
+- Official Website
+- Official Notification
+- Information Bulletin
+- Admission Brochure
+- Online Application Link
+- Official Result Link
+
+---
+
+27.6 User Verification Policy
+
+Career Saathi should always provide users with an option to verify important information directly from the official website.
+
+If any difference exists between Career Saathi content and the official notification, the official notification shall be treated as the final authority.
+
+---
+
+27.7 Data Fields
+
+Recommended fields:
+
+- officialSource
+- officialWebsite
+- officialNotification
+- verificationStatus
+- sourceType
+- lastVerified
+- lastUpdated
+
+---
+
+Final Standard
+
+Career Saathi provides trusted guidance while official organizations remain the final authority for admissions, examinations, recruitment and regulations.
+
+Version:
+
+Official Source & Verification Standards v1.0
+
+28. Quality Assurance & Data Governance Standards
+
+28.1 Purpose
+
+To ensure that Career Saathi maintains accurate, consistent, reliable and high-quality education and career information.
+
+---
+
+28.2 Data Quality Principles
+
+Every record should be:
+
+- Accurate
+- Complete
+- Consistent
+- Verified
+- Up-to-date
+- Easy to understand
+
+---
+
+28.3 Duplicate Prevention
+
+Career Saathi follows:
+
+One Data Source
+
+↓
+
+Multiple Uses
+
+↓
+
+Zero Duplicate Data
+
+Duplicate records should never be created.
+
+---
+
+28.4 Data Review Cycle
+
+Recommended review frequency:
+
+- Exam Information → As notified
+- Admissions → Every academic session
+- Scholarships → Every academic session
+- Government Jobs → As notified
+- Colleges → Yearly
+- Courses → Yearly
+- Career Information → As required
+
+---
+
+28.5 Quality Checklist
+
+Before publishing:
+
+- ID verified
+- Category verified
+- Official source available
+- Mapping completed
+- Grammar checked
+- Links verified
+- Last Updated added
+- Verification Status added
+
+---
+
+28.6 Data Governance Rules
+
+- Every record must have a unique ID.
+- Every update should maintain version history.
+- Deleted data should be archived whenever possible.
+- Major changes should be documented.
+- Data ownership should be clearly defined.
+
+---
+
+28.7 Continuous Improvement
+
+Career Saathi should continuously improve using:
+
+- User feedback
+- Analytics
+- AI insights
+- Official updates
+- Expert review
+
+---
+
+Final Principle
+
+High Quality Data
+
+↓
+
+Trusted Knowledge
+
+↓
+
+Better AI
+
+↓
+
+Better Career Guidance
+
+Version:
+
+Quality Assurance & Data Governance Standards v1.0
