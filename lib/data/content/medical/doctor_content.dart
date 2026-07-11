@@ -1,148 +1,255 @@
 import '../../../models/career_content_model.dart';
 
 final CareerContentModel doctorContent = CareerContentModel(
+
   careerId: "MED_DOCTOR_001",
 
-  // Title
   titleHindi: "डॉक्टर",
   titleEnglish: "Doctor",
 
-  // Overview
   overviewHindi:
-      "डॉक्टर एक स्वास्थ्य विशेषज्ञ होता है जो रोगों की पहचान, उपचार, रोकथाम तथा रोगियों के स्वास्थ्य की देखभाल करता है। यह समाज की सबसे सम्मानित और जिम्मेदार पेशों में से एक है।",
+      "डॉक्टर एक स्वास्थ्य विशेषज्ञ होता है जो रोगों की पहचान, उपचार, रोकथाम और रोगियों के स्वास्थ्य की देखभाल करता है। यह समाज की सबसे जिम्मेदार और सम्मानित सेवाओं में से एक है।",
 
   overviewEnglish:
-      "A doctor is a healthcare professional who diagnoses, treats, prevents diseases and helps people maintain good health.",
+      "A doctor is a healthcare professional who diagnoses, treats and prevents diseases while providing medical care to patients.",
 
-  // Responsibilities
+
   responsibilities: [
-    "रोगियों की जांच करना",
+
+    "रोगियों की जांच करना और स्वास्थ्य स्थिति समझना",
+
     "बीमारियों का निदान करना",
-    "उचित उपचार एवं दवाइयाँ देना",
-    "आपातकालीन चिकित्सा सेवाएँ प्रदान करना",
-    "स्वास्थ्य संबंधी सलाह देना",
-    "रोगों की रोकथाम के लिए जागरूकता फैलाना",
+
+    "उपचार योजना बनाना और चिकित्सा सलाह देना",
+
+    "Emergency medical care प्रदान करना",
+
+    "रोगों की रोकथाम और स्वास्थ्य जागरूकता बढ़ाना",
+
+    "Medical records maintain करना",
+
   ],
 
-  // Work Environment
+
   workEnvironment: [
+
     "Government Hospitals",
+
     "Private Hospitals",
+
     "Medical Colleges",
-    "Clinics",
+
     "Research Institutes",
-    "NGOs",
+
+    "Clinics",
+
     "Defence Medical Services",
+
+    "Healthcare Organisations",
+
   ],
 
-  // Eligibility
+
   eligibility: [
-    "10+2 (PCB) उत्तीर्ण",
-    "NEET UG परीक्षा उत्तीर्ण",
-    "मान्यता प्राप्त मेडिकल कॉलेज में प्रवेश",
-    "MBBS कोर्स सफलतापूर्वक पूरा करना",
-    "इंटर्नशिप पूर्ण करना",
+
+    "Class 12 में Physics, Chemistry और Biology (PCB) विषय होना चाहिए",
+
+    "NEET UG Entrance Exam qualify करना",
+
+    "Recognised Medical College से MBBS पूरा करना",
+
+    "Compulsory Internship complete करना",
+
+    "Medical registration प्राप्त करना",
+
   ],
 
-  // Required Skills
+
   requiredSkills: [
+
     "Biology Knowledge",
+
     "Communication Skills",
-    "Decision Making",
-    "Problem Solving",
+
     "Patient Care",
+
+    "Decision Making",
+
+    "Problem Solving",
+
     "Leadership",
-    "Teamwork",
+
     "Critical Thinking",
+
+    "Team Work",
+
   ],
 
-  // Career Opportunities
+
   careerOpportunities: [
+
     "General Physician",
+
     "Specialist Doctor",
+
     "Surgeon",
+
     "Medical Researcher",
+
     "Medical Professor",
-    "Hospital Administrator",
+
+    "Healthcare Consultant",
+
   ],
 
-  // Government Opportunities
+
   governmentOpportunities: [
-    "Government Hospitals",
-    "AIIMS",
+
+    "AIIMS Hospitals",
+
+    "Government Medical Colleges",
+
     "ESIC Hospitals",
+
     "Railway Hospitals",
+
     "Armed Forces Medical Services",
-    "State Health Departments",
+
+    "State Health Department",
+
   ],
 
-  // Private Opportunities
+
   privateOpportunities: [
+
     "Private Hospitals",
+
     "Corporate Hospitals",
-    "Healthcare Companies",
-    "Medical Colleges",
+
     "Diagnostic Centres",
+
+    "Healthcare Companies",
+
+    "Medical Education Sector",
+
   ],
 
-  // Self Employment
+
   selfEmploymentOptions: [
+
     "Private Clinic",
-    "Multi-Speciality Clinic",
+
+    "Speciality Clinic",
+
     "Telemedicine Services",
+
     "Healthcare Consultancy",
+
   ],
 
-  // Higher Studies
+
   higherStudyOptions: [
-    "MD",
-    "MS",
-    "DM",
-    "M.Ch",
-    "Fellowship Programs",
-    "Medical Research",
+
+    "MD (Doctor of Medicine)",
+
+    "MS (Master of Surgery)",
+
+    "DM Super Specialisation",
+
+    "M.Ch Surgical Super Specialisation",
+
+    "Medical Research Programs",
+
   ],
 
-  // Salary
+
   averageSalary:
-      "लगभग ₹8 लाख से ₹15 लाख प्रति वर्ष (अनुभव एवं विशेषज्ञता के अनुसार परिवर्तन संभव)।",
+      "Doctor की income specialization, experience और workplace के अनुसार अलग-अलग होती है। शुरुआती स्तर पर लगभग ₹6–10 लाख प्रति वर्ष से शुरू होकर experienced specialists में काफी अधिक हो सकती है।",
+
 
   salaryGrowth:
-      "अनुभव, विशेषज्ञता एवं कार्यक्षेत्र के अनुसार आय में लगातार वृद्धि होती है।",
+      "Experience, specialization, private practice और healthcare demand के साथ income growth के अच्छे अवसर उपलब्ध होते हैं।",
 
-  // Advantages
+
   advantages: [
-    "सम्मानजनक पेशा",
-    "रोजगार की उच्च संभावनाएँ",
-    "देश एवं विदेश में अवसर",
+
+    "सम्मानजनक और जिम्मेदार profession",
+
+    "भारत और विदेश दोनों में career opportunities",
+
     "समाज सेवा का अवसर",
-    "दीर्घकालीन करियर सुरक्षा",
+
+    "Long-term career stability",
+
+    "Multiple specialization options",
+
   ],
 
-  // Challenges
+
   challenges: [
-    "लंबी पढ़ाई",
-    "उच्च प्रतिस्पर्धा",
-    "मानसिक एवं शारीरिक दबाव",
-    "आपातकालीन परिस्थितियों में कार्य",
-    "लगातार सीखते रहना आवश्यक",
+
+    "लंबी और कठिन पढ़ाई",
+
+    "NEET में उच्च competition",
+
+    "Work pressure",
+
+    "Emergency situations में responsibility",
+
+    "Continuous learning जरूरी है",
+
   ],
 
-  // Future Scope
-  futureScope:
-      "भारत एवं विश्वभर में योग्य डॉक्टरों की मांग लगातार बढ़ रही है। AI, Telemedicine, Digital Healthcare, Research तथा Super Speciality क्षेत्रों में भविष्य की उत्कृष्ट संभावनाएँ उपलब्ध हैं।",
 
-  // Official Information
+  futureScope:
+      "Healthcare sector तेजी से बढ़ रहा है। Medical Technology, AI Healthcare, Telemedicine, Research और Super Speciality fields में Doctors के लिए भविष्य में बहुत अच्छे अवसर हैं।",
+
+
   officialSource:
       "National Medical Commission (NMC)",
+
 
   officialWebsite:
       "https://www.nmc.org.in",
 
-  // Verification
-  academicYear: "2026-27",
 
-  lastUpdated: "July 2026",
+  academicYear:
+      "2026-27",
 
-  verificationStatus: "Verified",
+
+  lastUpdated:
+      "July 2026",
+
+
+  verificationStatus:
+      "Verified",
+
+
+  relatedCareerIds: [
+
+    "MED_DENTIST_001",
+
+    "MED_NURSE_001",
+
+    "MED_PHARMACIST_001",
+
+    "MED_PHYSIOTHERAPIST_001",
+
+    "MED_SURGEON_001",
+
+  ],
+
+
+  importantLinks: [
+
+    "NMC Official Website",
+
+    "NEET UG Official Information",
+
+    "National Scholarship Portal",
+
+    "Medical Education Guidelines",
+
+  ],
+
 );
