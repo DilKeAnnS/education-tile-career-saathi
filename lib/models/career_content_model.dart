@@ -44,6 +44,9 @@ class CareerContentModel {
   final String lastUpdated;
   final String verificationStatus;
 
+  final List<String> relatedCareerIds;
+  final List<String> importantLinks;
+
   CareerContentModel({
     required this.careerId,
 
@@ -58,6 +61,9 @@ class CareerContentModel {
 
     required this.eligibility,
     required this.requiredSkills,
+
+    required this.relatedCareerIds,
+    required this.importantLinks,
 
     required this.careerOpportunities,
     required this.governmentOpportunities,
