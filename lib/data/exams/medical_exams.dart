@@ -93,4 +93,61 @@ final List<ExamModel> medicalExams = [
         "Verified",
   ),
 
+  ExamModel(
+  examId: "EXAM_NEET_UG",
+
+  title: "National Eligibility cum Entrance Test (UG)",
+
+  category: "Undergraduate Medical Entrance",
+
+  description:
+      "NEET UG is the national entrance examination for admission to MBBS, BDS and other undergraduate medical courses.",
+
+  conductingBody:
+      "National Testing Agency (NTA)",
+
+  eligibility: [
+    "Class 12 with Physics, Chemistry and Biology",
+  ],
+
+  applicableCourseIds: [
+    "COURSE_MBBS",
+    "COURSE_BDS",
+  ],
+
+  officialSource:
+      "National Testing Agency",
+
+  officialWebsite:
+      "https://neet.nta.nic.in",
+),
+  ExamModel(
+  examId: "EXAM_NEET_MDS",
+
+  title: "National Eligibility cum Entrance Test for MDS",
+
+  category: "Postgraduate Dental Entrance",
+
+  description:
+      "NEET MDS is the national entrance examination for admission to Master of Dental Surgery (MDS) courses in India.",
+
+  conductingBody:
+      "National Board of Examinations in Medical Sciences (NBEMS)",
+
+  eligibility: [
+    "BDS Degree",
+    "Completed Internship",
+  ],
+
+  applicableCourseIds: [
+    "COURSE_MDS",
+  ],
+
+  officialSource:
+      "NBEMS",
+
+  officialWebsite:
+      "https://natboard.edu.in",
+),
+
 ];
