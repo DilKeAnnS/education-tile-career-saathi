@@ -2,6 +2,7 @@ import '../../models/career_model.dart';
 
 final List<CareerModel> medicalCareers = [
 
+## Doctor ##
   CareerModel(
     careerId: "MED_DOCTOR_001",
 
@@ -113,4 +114,97 @@ final List<CareerModel> medicalCareers = [
         "Verified",
   ),
 
-];
+## Dentist ##
+  CareerModel(
+    careerId: "MED_DENTIST_001",
+
+    title: "Dentist",
+
+    category: "Medical",
+
+    careerType: "Dental Healthcare Professional",
+
+    overview:
+        "A dental healthcare professional who diagnoses, prevents and treats diseases related to teeth, gums and oral health.",
+
+    suitableStages: [
+      "AFTER_12",
+      "UG",
+    ],
+
+    relatedStreams: [
+      "MEDICAL",
+    ],
+
+    roadmapIds: [
+      "ROADMAP_DENTIST_AFTER_12",
+    ],
+
+    courseIds: [
+      "COURSE_BDS",
+      "COURSE_MDS",
+    ],
+
+    examIds: [
+      "EXAM_NEET_UG",
+      "EXAM_NEET_MDS",
+    ],
+
+    collegeIds: [
+      "COLLEGE_MAIDS",
+      "COLLEGE_GDC_MUMBAI",
+    ],
+
+    scholarshipIds: [
+      "SCHOLARSHIP_NATIONAL",
+    ],
+
+    skills: [
+      "Biology",
+      "Patient Care",
+      "Manual Dexterity",
+      "Communication",
+      "Attention to Detail",
+    ],
+
+    jobRoles: [
+      "General Dentist",
+      "Dental Surgeon",
+      "Orthodontist",
+      "Oral Pathologist",
+      "Dental Consultant",
+    ],
+
+    keywords: [
+      "Dentist",
+      "BDS",
+      "MDS",
+      "Dental",
+      "NEET",
+      "Oral Health",
+    ],
+
+    duration:
+        "5 years for BDS including internship",
+
+    futureScope:
+        "Clinical practice, hospitals, academics, research and dental specialization opportunities.",
+
+    averageSalary:
+        "Depends on specialization, experience and place of practice",
+
+    officialSource:
+        "Dental Council of India (DCI)",
+
+    officialWebsite:
+        "https://dciindia.gov.in",
+
+    academicYear:
+        "2026",
+
+    lastUpdated:
+        "2026-07",
+
+    verificationStatus:
+        "Verified",
+  ),
