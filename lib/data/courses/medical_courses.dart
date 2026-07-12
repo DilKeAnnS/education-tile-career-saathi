@@ -178,4 +178,68 @@ final List<CourseModel> medicalCourses = [
         "Verified",
   ),
 
+  CourseModel(
+  courseId: "COURSE_BDS",
+
+  title: "Bachelor of Dental Surgery (BDS)",
+
+  category: "Undergraduate",
+
+  description:
+      "BDS is the undergraduate professional degree required to become a Dentist in India.",
+
+  duration: "5 years (including internship)",
+
+  eligibility: [
+    "Class 12 with Physics, Chemistry and Biology",
+    "NEET UG Qualified",
+  ],
+
+  entranceExamIds: [
+    "EXAM_NEET_UG",
+  ],
+
+  relatedCareerIds: [
+    "MED_DENTIST_001",
+  ],
+
+  officialSource:
+      "Dental Council of India",
+
+  officialWebsite:
+      "https://dciindia.gov.in",
+),
+  CourseModel(
+  courseId: "COURSE_MDS",
+
+  title: "Master of Dental Surgery (MDS)",
+
+  category: "Postgraduate",
+
+  description:
+      "MDS is a postgraduate specialization course in Dentistry after BDS.",
+
+  duration: "3 years",
+
+  eligibility: [
+    "BDS Degree",
+    "Internship Completed",
+    "NEET MDS Qualified",
+  ],
+
+  entranceExamIds: [
+    "EXAM_NEET_MDS",
+  ],
+
+  relatedCareerIds: [
+    "MED_DENTIST_001",
+  ],
+
+  officialSource:
+      "Dental Council of India",
+
+  officialWebsite:
+      "https://dciindia.gov.in",
+),
+
 ];
