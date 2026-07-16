@@ -1,59 +1,51 @@
-class CollegeModel {
-  final String collegeId;
-  final String title;
+CollegeModel(
 
-  final String category;
-  final String stream;
+  // Basic Identity
+  collegeId:
+  title:
+  category:
+  stream:
 
-  final String state;
-  final String locationType;
-  final String city;
+  // Location
+  state:
+  locationType:
+  city:
+  district:
+  latitude:
+  longitude:
 
-  final String ownership;
+  // Ownership & Recognition
+  ownership:
+  nmcRecognition:
+  naacGrade:
 
-  final List<String> courses;
-  final List<String> entranceExamIds;
+  // Courses & Admission
+  courses:
+  entranceExamIds:
+  seats:
+  cutoffData:
 
-  final int? establishedYear;
-  final int? totalSeats;
+  // Ranking & Quality
+  ranking:
 
-  final Map<String, dynamic>? ranking;
+  // Financial Information
+  fees:
 
-  final Map<String, dynamic>? fees;
+  // Infrastructure
+  hospital:
+  attachedHospitalCapacity:
+  hostel:
 
-  final List<String>? facilities;
+  // Policy Information
+  bondPolicy:
 
-  final String? attachedHospital;
+  // Official Verification
+  officialWebsite:
+  officialSource:
 
-  final String? officialSource;
-  final String? officialWebsite;
+  // Version Control
+  academicYear:
+  verificationStatus:
+  lastUpdated:
 
-  final String academicYear;
-
-  final String verificationStatus;
-  final String lastUpdated;
-
-  CollegeModel({
-    required this.collegeId,
-    required this.title,
-    required this.category,
-    required this.stream,
-    required this.state,
-    required this.locationType,
-    required this.city,
-    required this.ownership,
-    required this.courses,
-    required this.entranceExamIds,
-    this.establishedYear,
-    this.totalSeats,
-    this.ranking,
-    this.fees,
-    this.facilities,
-    this.attachedHospital,
-    this.officialSource,
-    this.officialWebsite,
-    required this.academicYear,
-    required this.verificationStatus,
-    required this.lastUpdated,
-  });
-}
+)
