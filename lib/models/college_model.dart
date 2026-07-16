@@ -1,87 +1,59 @@
 class CollegeModel {
-
   final String collegeId;
-
-  final String name;
+  final String title;
 
   final String category;
-
-  final String description;
-
+  final String stream;
 
   final String state;
-
+  final String locationType;
   final String city;
 
+  final String ownership;
 
-  final List<String> relatedStreams;
+  final List<String> courses;
+  final List<String> entranceExamIds;
 
-  final List<String> relatedCourses;
+  final int? establishedYear;
+  final int? totalSeats;
 
-  final List<String> relatedCareers;
+  final Map<String, dynamic>? ranking;
 
+  final Map<String, dynamic>? fees;
 
-  final String collegeType;
+  final List<String>? facilities;
 
+  final String? attachedHospital;
 
-  final String admissionProcess;
-
-
-  final String officialWebsite;
-
-
-  final String rankingInfo;
-
+  final String? officialSource;
+  final String? officialWebsite;
 
   final String academicYear;
 
+  final String verificationStatus;
   final String lastUpdated;
 
-  final String verificationStatus;
-
-
-
   CollegeModel({
-
     required this.collegeId,
-
-    required this.name,
-
+    required this.title,
     required this.category,
-
-    required this.description,
-
-
+    required this.stream,
     required this.state,
-
+    required this.locationType,
     required this.city,
-
-
-    required this.relatedStreams,
-
-    required this.relatedCourses,
-
-    required this.relatedCareers,
-
-
-    required this.collegeType,
-
-
-    required this.admissionProcess,
-
-
-    required this.officialWebsite,
-
-
-    required this.rankingInfo,
-
-
+    required this.ownership,
+    required this.courses,
+    required this.entranceExamIds,
+    this.establishedYear,
+    this.totalSeats,
+    this.ranking,
+    this.fees,
+    this.facilities,
+    this.attachedHospital,
+    this.officialSource,
+    this.officialWebsite,
     required this.academicYear,
-
-    required this.lastUpdated,
-
     required this.verificationStatus,
-
+    required this.lastUpdated,
   });
-
 }
