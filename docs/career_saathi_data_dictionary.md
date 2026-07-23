@@ -52,3 +52,36 @@ Yes
 - Firebase
 - APIs
 - AI Engine
+---
+
+# Field 002
+
+## subStreamId
+
+**Purpose**
+
+Unique identifier of the Education Sub Stream.
+
+**Type**
+
+String
+
+**Format**
+
+SUB_<NAME>
+
+**Example**
+
+SUB_DOCTOR
+
+**Required**
+
+Yes
+
+**Used In**
+
+- Excel
+- Dart Models
+- Firebase
+- APIs
+- AI Engine
