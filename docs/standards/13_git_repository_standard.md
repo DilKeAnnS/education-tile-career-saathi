@@ -498,6 +498,729 @@ Close
 
 > Every idea, problem, and improvement should have a visible place in Nandika's development history.
 
+---
+
+# 22. Commit Message Standard
+
+## Purpose
+
+A commit message should clearly explain:
+
+- What changed
+- Why it changed
+- Which area is affected
+
+A good commit history helps future developers understand Nandika's evolution.
 
 ---
 
+# 23. Commit Format
+
+Recommended format:
+
+<Type>: <Short description>
+
+<Optional detailed explanation>
+```Example:
+
+feat: add medical college database structure
+
+Added master structure for medical colleges
+with validation fields and source tracking.
+
+
+---
+
+24. Commit Types
+
+feat
+
+For new features.
+
+Example:
+
+feat: add AnnS AI memory module
+
+
+---
+
+fix
+
+For bug corrections.
+
+Example:
+
+fix: correct college data validation issue
+
+
+---
+
+docs
+
+For documentation changes.
+
+Example:
+
+docs: update security standard
+
+
+---
+
+data
+
+For database/content updates.
+
+Example:
+
+data: add Haryana medical colleges
+
+
+---
+
+test
+
+For testing changes.
+
+Example:
+
+test: add search validation tests
+
+
+---
+
+refactor
+
+For improving existing code without changing functionality.
+
+
+---
+
+25. Commit Quality Rules
+
+A commit should:
+
+✓ Have a clear purpose
+
+✓ Avoid unrelated changes
+
+✓ Be easy to review
+
+✓ Reference related issue numbers where applicable
+
+Example:
+
+feat: add offline AnnS AI cache support
+
+Related: #25
+
+
+---
+
+26. Pull Request (PR) Standard
+
+Purpose:
+
+A Pull Request allows safe review before merging changes.
+
+Flow:
+
+Developer
+
+↓
+
+Feature Branch
+
+↓
+
+Pull Request
+
+↓
+
+Code Review
+
+↓
+
+Testing
+
+↓
+
+Approval
+
+↓
+
+Merge
+
+
+---
+
+27. Pull Request Requirements
+
+Every PR should contain:
+
+Title:
+
+Purpose:
+
+Changes Made:
+
+Affected Tile/Module:
+
+Testing Completed:
+
+Screenshots (if UI):
+
+Related Issues:
+
+Future Notes:
+
+
+---
+
+28. Code Review Standard
+
+Review should check:
+
+Technical Quality
+
+Code correctness
+
+Performance
+
+Security
+
+
+Architecture
+
+Follows Nandika standards
+
+Does not break existing systems
+
+
+Vision Alignment
+
+Supports the 26-tile ecosystem
+
+Does not reduce or change the original vision
+
+
+
+---
+
+29. Documentation Review
+
+Any major feature should update documentation.
+
+Example:
+
+New AnnS AI feature:
+
+Code update
+
+↓
+
+Testing
+
+↓
+
+Documentation update
+
+↓
+
+Release
+
+
+---
+
+30. Data Contribution Workflow
+
+Data contributors should follow:
+
+Data Collection
+
+↓
+
+Source Verification
+
+↓
+
+Data Formatting
+
+↓
+
+Validation
+
+↓
+
+Review
+
+↓
+
+Database Addition
+
+Important:
+
+Data should always maintain:
+
+Source
+
+Date
+
+Verification status
+
+Responsible contributor
+
+
+
+---
+
+31. Future Team Collaboration
+
+Future contributors may include:
+
+Developers
+
+Researchers
+
+Educators
+
+Domain experts
+
+Data specialists
+
+
+Everyone should follow the same standards.
+
+
+---
+
+32. Golden Collaboration Principle
+
+> Every contribution should make Nandika stronger, more reliable, and more aligned with the vision of serving all kinds of users through the 26 permanent tile ecosystem.
+
+---
+
+# 33. Repository Security Standard
+
+## Purpose
+
+Protect Nandika development assets from:
+
+- Accidental deletion
+- Unauthorised changes
+- Data loss
+- Malicious modifications
+- Credential exposure
+
+---
+
+# 34. Branch Protection Standard
+
+The main branch represents stable Nandika development.
+
+Rules:
+
+✓ No direct risky changes
+
+✓ Review required before merging
+
+✓ Testing required before release
+
+✓ Previous versions should remain traceable
+
+Structure:
+
+main
+
+↓
+
+development
+
+↓
+
+feature branch
+
+↓
+
+testing
+
+↓
+
+merge
+
+---
+
+# 35. Access Control Standard
+
+Repository access should follow responsibility.
+
+Example:
+
+## Viewer
+
+Can:
+
+- Read code
+- Read documentation
+
+## Contributor
+
+Can:
+
+- Create branches
+- Submit changes
+
+## Reviewer
+
+Can:
+
+- Review changes
+- Approve merging
+
+## Maintainer
+
+Can:
+
+- Manage repository structure
+- Control releases
+
+Principle:
+
+> Give only the required level of access.
+
+---
+
+# 36. Secret Management Standard
+
+Sensitive information should never be stored directly in the repository.
+
+Examples:
+
+Do not upload:
+
+- API keys
+- Passwords
+- Private tokens
+- Production credentials
+- Sensitive user data
+
+Use:
+
+- Environment variables
+- Secure secret storage
+- Protected configuration systems
+
+---
+
+# 37. Backup & Recovery Standard
+
+Important repository assets should have backup protection.
+
+Backup should include:
+
+- Source code
+- Documentation
+- Database structures
+- Important configuration
+- Release history
+
+Recovery should be tested.
+
+A backup is useful only when restoration works.
+
+---
+
+# 38. Data Protection in Repository
+
+Nandika repositories may contain large knowledge structures.
+
+Data management should ensure:
+
+- No personal user data exposure
+- Proper licensing awareness
+- Source tracking
+- Verification information
+- Change history
+
+---
+
+# 39. Release Management Standard
+
+Every major release should have:
+
+Version Number
+
+↓
+
+Release Notes
+
+↓
+
+Testing Report
+
+↓
+
+Known Issues
+
+↓
+
+Future Improvements
+
+Example:
+
+Nandika v1.0
+
+Initial public release
+
+Includes:
+
+Education Tile foundation
+
+AnnS AI basic support
+
+User system
+
+
+---
+
+# 40. Repository Issue & Roadmap Connection
+
+Issues should connect with development progress.
+
+Flow:
+
+Vision Requirement
+
+↓
+
+Master Issue
+
+↓
+
+Tile/System Issue
+
+↓
+
+Development Task
+
+↓
+
+Code Change
+
+↓
+
+Testing
+
+↓
+
+Release
+
+Important:
+
+The current Education Tile issues remain part of:
+
+Nandika
+
+↓
+
+Education Tile
+
+↓
+
+Career Saathi Development Phase
+
+They represent one ecosystem, not the complete Nandika vision.
+
+---
+
+# 41. Open Contribution Standard
+
+Future contributors may include:
+
+- Developers
+- Researchers
+- Educators
+- Domain experts
+- Data contributors
+
+Before accepting contributions:
+
+Check:
+
+- Quality
+- Source reliability
+- Security
+- Vision alignment
+
+---
+
+# 42. Golden Repository Security Principle
+
+> Protect the repository because it represents the memory, knowledge, and future growth path of Nandika.
+
+
+---
+
+# 43. Repository Identity Standard
+
+## Purpose
+
+The repository name represents the identity of the project.
+
+As Nandika grows beyond the Education Tile, the repository should represent the complete ecosystem.
+
+---
+
+# 44. Repository Naming Evolution
+
+Current Phase:
+
+education-tile-career-saathi
+
+Meaning:
+
+Education Tile focused development.
+
+Future Platform Identity:
+
+Nandika
+
+or a suitable official repository name based on final branding decision.
+
+---
+
+# 45. Repository Rename Principle
+
+A repository rename should:
+
+✓ Preserve complete Git history
+
+✓ Maintain documentation links
+
+✓ Update references
+
+✓ Inform contributors
+
+✓ Update connected services
+
+✓ Maintain user understanding
+
+---
+
+# 46. Rename Migration Process
+
+Before rename:
+
+Review Current Repository
+
+↓
+
+Update Documentation
+
+↓
+
+Check Dependencies
+
+↓
+
+Rename Repository
+
+↓
+
+Update Local References
+
+↓
+
+Verify Connections
+
+↓
+
+Continue Development
+
+---
+
+# 47. Repository Description Standard
+
+The repository description should explain the full vision.
+
+Example:
+
+Nandika - One Platform for All Kinds of Users
+
+A modular digital ecosystem connecting education, career, knowledge, contribution, AI assistance, and future human development through 26 permanent user-focused ecosystems.
+
+---
+
+# 48. Repository Documentation Updates After Rename
+
+Update:
+
+- README.md
+- Documentation links
+- Badges
+- Deployment settings
+- API references
+- Issue references
+- Contribution guides
+
+---
+
+# 49. Long-Term Repository Governance
+
+As Nandika grows:
+
+Maintain:
+
+- Clear ownership
+- Documentation discipline
+- Review process
+- Security practices
+- Version history
+
+The repository should remain understandable even after many years.
+
+---
+
+# 50. Future Team Scalability
+
+The repository should support:
+
+- Individual developers
+- Development teams
+- Researchers
+- Educational experts
+- Domain specialists
+- Community contributors
+
+Everyone should understand:
+
+- Nandika vision
+- 26 tile architecture
+- Development standards
+- Contribution rules
+
+---
+
+# 51. Final Git Repository Philosophy
+
+> The Nandika repository is not just a storage location. It is the digital memory of the platform — preserving its vision, architecture, knowledge, development journey, and future possibilities.
+
+---
+
+# Document Status
+
+Document:
+
+13_git_repository_standard.md
+
+Version:
+
+1.0
+
+Status:
+
+Official Git Repository Standard
+
+End of Document
+
+
+---
