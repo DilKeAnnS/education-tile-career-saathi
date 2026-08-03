@@ -1,77 +1,83 @@
-Nandika User Schema
+Nandika Organisation Schema
 
 Document Purpose
 
-The Nandika User Schema defines the universal identity structure for every person participating in the Nandika ecosystem.
+The Nandika Organisation Schema defines the universal structure for every type of organisation participating in the Nandika ecosystem.
 
-Nandika follows the principle:
+Nandika does not limit organisations to a specific category.
 
-«One User Identity → Multiple Roles → Multiple Ecosystem Connections»
+An organisation can belong to any ecosystem and can create value in multiple ways.
 
-A user is not limited to one purpose.
+Examples:
 
-The same individual can participate as:
+- Educational institutions
+- Hospitals
+- Businesses
+- Agricultural organisations
+- Government bodies
+- NGOs
+- Research centres
+- Sports organisations
+- Creative organisations
+- Community organisations
+- Service organisations
+- International organisations
+- Future organisation types
 
-- Service Collector
-- Service Provider
-- Learner
-- Customer
-- Professional
-- Creator
-- Mentor
-- Contributor
-- Partner
-- Community Member
+The principle:
 
-The User Schema is the foundation for all Nandika ecosystems.
+«One Organisation Record → Multiple Ecosystem Connections»
 
 ---
 
-1. User Entity Definition
+1. Organisation Entity Definition
 
 Entity Name
 
-User
+Organisation
 
 Entity ID
 
-"USER_ID"
+"ORGANISATION_ID"
 
 Purpose
 
-Represents an individual person using or participating in Nandika.
+Represents any registered entity that provides, creates, manages, supports, or participates in Nandika ecosystems.
 
-A User can interact with:
+An organisation may act as:
 
-- Knowledge Ecosystem
-- Career Ecosystem
-- Service Ecosystem
-- Commerce Ecosystem
-- Community Ecosystem
-- Opportunity Ecosystem
-- Future ecosystems
+- Service Provider
+- Service Collector
+- Knowledge Contributor
+- Opportunity Creator
+- Product Provider
+- Community Builder
+- Partner
+- Research Contributor
 
 ---
 
-2. Core Identity Fields
+2. Organisation Identity Fields
 
-user_id
+organisation_id
 
-full_name
+organisation_name
 
-profile_photo
+organisation_type
 
-date_of_birth
+organisation_category
 
-gender
+logo
 
-languages[]
+description
 
-location_id
+establishment_date
 
-contact_information
+registration_information
 
-account_status
+official_identification
+
+status
 
 created_date
 
@@ -79,321 +85,352 @@ updated_date
 
 ---
 
-3. User Role System
+3. Organisation Type System
 
-A user can have multiple active roles.
-
-Role Examples
-
-roles[]
-
-Student
-
-Parent
-
-Teacher
-
-Professional
-
-Entrepreneur
-
-Customer
-
-Service Provider
-
-Creator
-
-Mentor
-
-Contributor
-
-Partner
-
-Community Member
-
-Role selection should be dynamic and expandable.
-
-Future roles should be added without changing the core user structure.
-
----
-
-4. User Profile Information
-
-profile
-
-    bio
-
-    education_background[]
-
-    professional_background[]
-
-    skills[]
-
-    interests[]
-
-    achievements[]
-
-    certifications[]
-
-    experience[]
-
-This information helps users discover relevant:
-
-- People
-- Services
-- Opportunities
-- Communities
-- Knowledge resources
-
----
-
-5. Service Provider Profile
-
-A user can become a service provider.
-
-Example:
-
-- Teacher
-- Consultant
-- Freelancer
-- Expert
-- Creator
-- Professional
-
-Structure:
-
-service_provider_profile
-
-    provider_status
-
-    service_categories[]
-
-    expertise[]
-
-    experience_years
-
-    availability
-
-    service_locations[]
-
-    pricing_information
-
-    verification_status
-
----
-
-6. Service Collector Profile
-
-A user can also be a service collector.
+Organisation type should be flexible and expandable.
 
 Examples:
 
-- Student seeking education
-- Customer seeking services
-- Professional seeking opportunities
+Educational Institution
 
-Structure:
+Healthcare Organisation
 
-service_collector_profile
+Business
 
-    requirements[]
+Company
 
-    interests[]
+Startup
 
-    preferred_services[]
+Government Organisation
 
-    goals[]
+NGO
 
-    preferred_locations[]
+Research Institution
 
-    preferences
+Agriculture Organisation
+
+Farm Organisation
+
+Sports Organisation
+
+Creative Organisation
+
+Media Organisation
+
+Community Organisation
+
+Professional Service Organisation
+
+International Organisation
+
+Other
+
+Future types can be added without changing the core model.
 
 ---
 
-7. Ecosystem Participation
+4. Ecosystem Participation
 
-A user can participate in multiple ecosystems.
+An organisation can participate in multiple Nandika ecosystems.
 
 Structure:
 
-ecosystem_membership[]
+ecosystem_connections[]
 
     ecosystem_name
 
-    participation_type
+    role
 
-    active_status
-
-    joining_date
+    activity_status
 
 Examples:
 
-Knowledge Ecosystem → Learner
+University
 
-Career Ecosystem → Job Seeker
+→ Knowledge Ecosystem
 
-Service Ecosystem → Provider
+→ Career Ecosystem
 
-Community Ecosystem → Member
+→ Research Ecosystem
+
+
+Hospital
+
+→ Healthcare Ecosystem
+
+→ Education Ecosystem
+
+→ Employment Ecosystem
+
+
+Business
+
+→ Commerce Ecosystem
+
+→ Service Ecosystem
+
+→ Opportunity Ecosystem
 
 ---
 
-8. User Organisation Relationships
+5. Organisation Profile
 
-Users can connect with organisations.
+organisation_profile
 
-Examples:
+    mission
 
-- Student → College
-- Employee → Company
-- Consultant → Organisation
-- Partner → Institution
+    vision
+
+    values
+
+    activities
+
+    achievements
+
+    certifications
+
+    expertise_areas[]
+
+Every organisation should maintain its own identity and vision.
+
+---
+
+6. Services Provided
+
+Organisations may provide multiple services.
 
 Structure:
 
-organisation_connections[]
+services[]
 
-    organisation_id
+    service_id
+
+    service_category
+
+    description
+
+    availability
+
+    target_users
+
+Examples:
+
+- Education services
+- Healthcare services
+- Professional services
+- Agricultural support
+- Community services
+
+---
+
+7. Products Provided
+
+For organisations involved in commerce or production:
+
+products[]
+
+    product_id
+
+    category
+
+    description
+
+    availability
+
+    service_connections
+
+---
+
+8. Opportunities Created
+
+Organisations can create opportunities.
+
+Examples:
+
+- Jobs
+- Internships
+- Scholarships
+- Projects
+- Partnerships
+- Events
+
+Structure:
+
+opportunities[]
+
+    opportunity_id
+
+    opportunity_type
+
+    eligibility
+
+    requirements
+
+    deadline
+
+---
+
+9. Knowledge Contribution
+
+Organisations may contribute knowledge.
+
+Examples:
+
+- Courses
+- Research
+- Publications
+- Training
+- Educational resources
+
+Structure:
+
+knowledge_resources[]
+
+    resource_id
+
+    resource_type
+
+    domain
+
+    contribution_type
+
+---
+
+10. User Relationships
+
+Organisations connect with users in multiple ways.
+
+Examples:
+
+- Employee
+- Student
+- Customer
+- Member
+- Partner
+- Volunteer
+- Service Provider
+- Contributor
+
+Structure:
+
+user_relationships[]
+
+    user_id
 
     relationship_type
 
-    start_date
-
     status
 
----
-
-9. User Entity Relationships
-
-A User can connect with:
-
-User
-
- ├── Organisation
-
- ├── Service
-
- ├── Product
-
- ├── Knowledge Resource
-
- ├── Opportunity
-
- ├── Community
-
- ├── Event
-
- └── Experience
+    start_date
 
 ---
 
-10. Privacy and Control System
+11. Location Network
 
-Users control their information.
+Organisations may operate in multiple locations.
 
 Structure:
 
-privacy_settings
+locations[]
 
-    profile_visibility
+    location_id
 
-    contact_visibility
+    branch_type
 
-    service_visibility
+    operating_status
 
-    activity_visibility
+Supports:
 
-    data_sharing_preferences
+- Local organisations
+- National organisations
+- International organisations
 
 ---
 
-11. Verification System
-
-Trust is important across all ecosystems.
+12. Verification and Trust System
 
 Structure:
 
 verification
 
-    identity_status
+    organisation_status
 
-    profile_status
-
-    professional_status
+    registration_verified
 
     document_verification[]
 
-    verification_date
-
     verification_source
 
----
+    verification_date
 
-12. User Activity History
-
-Used for personalization and ecosystem connection.
-
-Structure:
-
-activity_history[]
-
-    activity_type
-
-    entity_id
-
-    interaction_type
-
-    timestamp
-
-Examples:
-
-- Viewed course
-- Joined community
-- Applied for opportunity
-- Requested service
-- Purchased product
+Trust is important for all ecosystems.
 
 ---
 
-13. AnnS AI Personalisation Data
+13. AnnS AI Organisation Understanding
 
-AnnS AI uses structured user data to provide intelligent assistance.
+AnnS AI uses organisation data to support:
 
-Structure:
+- Discovery
+- Recommendations
+- Matching
+- Partnerships
+- Opportunities
+- User guidance
 
-anns_ai_profile
+AI understanding includes:
 
-    goals[]
+organisation_profile
 
-    interests[]
++
 
-    preferences[]
+services
 
-    learning_style
++
 
-    career_preferences
+products
 
-    service_preferences
++
 
-    recommendation_history
+opportunities
 
-    interaction_patterns
++
 
-AnnS AI must respect:
+relationships
 
-- Privacy
-- User control
-- Transparency
+=
+
+Intelligent Ecosystem Connection
 
 ---
 
-14. User Data Lifecycle
+14. Organisation Relationships
 
-Account Creation
+Organisations can connect with:
 
-↓
+Organisation
 
-Profile Development
+ ├── Users
+
+ ├── Other Organisations
+
+ ├── Services
+
+ ├── Products
+
+ ├── Knowledge Resources
+
+ ├── Opportunities
+
+ ├── Communities
+
+ └── Events
+
+---
+
+15. Data Lifecycle
+
+Creation
 
 ↓
 
@@ -409,47 +446,41 @@ Relationship Building
 
 ↓
 
-Continuous Updates
+Updates
 
 ↓
 
-Account Management
+Continuous Improvement
 
 ---
 
-15. Database Design Principles
+16. Database Principles
 
-The User entity must:
+The Organisation entity must:
 
-- Exist only once
-- Be reusable everywhere
-- Support unlimited roles
-- Support future ecosystems
-- Avoid duplicate profiles
+- Exist once
+- Support all ecosystems
+- Avoid duplicate records
+- Maintain verified information
+- Support future expansion
 
-Do not create:
+Do not create separate organisation databases for:
 
-- Separate education users
-- Separate commerce users
-- Separate service users
+- Education
+- Healthcare
+- Commerce
+- Services
+- Communities
 
-All use the same Nandika identity.
+All use the same foundation.
 
 ---
 
-16. Final Principle
+17. Final Principle
 
-The Nandika User Schema represents the foundation of the entire platform:
+The Nandika Organisation Schema enables every organisation to participate equally in the universal ecosystem.
 
-One Person
-
-↓
-
-One Nandika Identity
-
-↓
-
-Multiple Roles
+One Organisation
 
 ↓
 
@@ -457,6 +488,14 @@ Multiple Ecosystems
 
 ↓
 
-Personalised Experience Powered by AnnS AI
+Multiple Relationships
+
+↓
+
+Connected Value Creation
+
+↓
+
+Nandika Global Ecosystem
 
 Build once → Verify once → Connect everywhere.
